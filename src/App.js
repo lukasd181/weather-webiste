@@ -9,6 +9,7 @@ export default class App extends Component {
   }
   getWeather = async() => {
     let apikey = process.env.REACT_APP_APIKEY;
+    console.log("apikey",apikey)
     let url =`https://api.openweathermap.org/data/2.5/weather?q=schenectady&appid=${apikey}&units=metric`;
     let response = await fetch(url);
     let data = await response.json();
