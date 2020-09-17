@@ -24,7 +24,7 @@ export default class App extends Component {
   }
 
 getWeatherByCurrentLocation = async (lon,lat) => {
-  let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`;
     let response = await fetch(url);
     let data = await response.json();
     console.log("data", data);
