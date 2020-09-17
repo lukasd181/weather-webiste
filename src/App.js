@@ -12,10 +12,12 @@ export default class App extends Component {
       weatherObj: {},
       cityName: "Ho Chi Minh",
       isLoading: true,
+      
     };
   }
 
   getLocation  = () => {
+    console.log("Hello");
     navigator.geolocation.getCurrentPosition((post) => {
       this.getWeatherByCurrentLocation(post.coords.longitude, post.coords.latitude)
     })
