@@ -18,7 +18,6 @@ export default class WeatherCard extends Component {
         <h3>
           {this.props.cityName}, {this.props.country}
         </h3>
-        
       </div>
     );
   }
